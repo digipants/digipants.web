@@ -20,5 +20,8 @@
   "homepage": "https://github.com/digipants/digipants.web#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "netlify-identity-widget": "^1.9.2"
   }
 }
