@@ -66881,3 +66881,18 @@ digipants.require("ix2").init({
     ],
   },
 });
+
+
+const netlifyIdentity = require('netlify-identity-widget');
+netlifyIdentity.init();
+netlifyIdentity.on('init', user => {
+  if (!user) {
+    // User is not authenticated, redirect to login page
+    window.location.href = '/pricing';
+  }
+});
+const loginBtn = document.querySelector('#login-btn');
+
+loginBtn.addEventListener('click', () => {
+  netlifyIdentity.open('login');
+});
