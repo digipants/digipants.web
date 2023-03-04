@@ -5025,7 +5025,7 @@
                 (function (t) {
                   var e = window.document.createElement("iframe");
                   (e.src =
-                    "https://digipants.com/site/third-party-cookie-check.html"),
+                    "https://digipants.com/site/third-party-cookie-check"),
                     (e.style.display = "none"),
                     (e.sandbox = "allow-scripts allow-same-origin");
                   var n = function n(r) {
