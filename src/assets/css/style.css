@@ -3251,7 +3251,7 @@ blockquote {
     text-decoration: none;
 }
 
-.navlink.w--current {
+.navlink.current {
     color: #8253d3;
 }
 
