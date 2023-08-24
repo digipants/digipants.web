@@ -2919,8 +2919,8 @@ blockquote {
 }
 
 .brand {
-    height: 80px;
-    padding-top: 26px;
+    height: auto;
+    padding-top: 16px;
     -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
     transition: opacity 200ms ease, -webkit-transform 200ms ease;
     transition: transform 200ms ease, opacity 200ms ease;
