@@ -1,38 +1,16 @@
 {
   "name": "digipants.web",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "devStart": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/digipants/digipants.web.git"
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/digipants/digipants.web/issues"
-  },
-  "homepage": "https://github.com/digipants/digipants.web#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "dotenv": "^16.0.3",
-    "nodemon": "^2.0.22"
-  },
+  "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "express-flash": "^0.0.2",
-    "express-session": "^1.17.3",
-    "method-override": "^3.0.0",
-    "netlify-identity-widget": "^1.9.2",
-    "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
