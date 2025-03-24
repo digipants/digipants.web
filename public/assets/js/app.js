@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("formSubs").action = "https://digipantsemail-production.up.railway.app/send-data";
 });
 
-
 !(function (t) {
   var e = {};
   function n(r) {
