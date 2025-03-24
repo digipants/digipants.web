@@ -4,7 +4,8 @@
  * Inline scripts may access the api using an async handler:
  *   var digipants = digipants || [];
  *   digipants.push(readyFunction);
- */ 
+ */
+
 //email backend setup
 
 document.addEventListener("DOMContentLoaded", function() {
