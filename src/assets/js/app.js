@@ -4,7 +4,15 @@
  * Inline scripts may access the api using an async handler:
  *   var digipants = digipants || [];
  *   digipants.push(readyFunction);
- */ !(function (t) {
+ */ 
+//email backend setup
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("formSubs").action = "https://digipantsemail-production.up.railway.app/send-data";
+});
+
+
+!(function (t) {
   var e = {};
   function n(r) {
     if (e[r]) return e[r].exports;
