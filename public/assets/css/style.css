@@ -5904,7 +5904,9 @@ blockquote {
     -ms-flex-align: center;
     align-items: center;
 }
-
+.sing-top-margin a{
+    text-decoration: none   ;
+}
 .qr-box {
     display: -webkit-box;
     display: -webkit-flex;
