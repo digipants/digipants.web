@@ -9,7 +9,7 @@
 //email backend setup
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("formSubs").action = "https://digipants-email.onrender.com/send-data";
+  document.getElementById("formSubs").action = "https://digipantsemail-production.up.railway.app/send-data";
 });
 
 !(function (t) {
