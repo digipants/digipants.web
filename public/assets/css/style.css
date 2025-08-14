@@ -4714,7 +4714,7 @@ blockquote {
 
 .team-item {
     display: inline-block;
-    width: 26%;
+    width: 10%;
     margin-right: 4%;
     margin-bottom: 50px;
 }
@@ -4780,11 +4780,11 @@ blockquote {
 }
 
 .change-this-image.team-6 {
-    background-image: url("https://www.digipants.com/assets/63238e717124a8c9a4c94e41/Aryan.png");
+    background-image: url("https://www.digipants.com/assets/Aryan.png");
     background-size: contain;
 }
-.change-this-image.team-6 {
-    background-image: url("https://www.digipants.com/assets/63238e717124a8c9a4c94e41/Parul.png");
+.change-this-image.team-7 {
+    background-image: url("https://www.digipants.com/assets/Parul.png");
     background-size: contain;
 }
 
