@@ -4720,25 +4720,26 @@ blockquote {
 }
 
 .team-item:last-child {
-    margin-right: 0%;
+    margin-right: 4%;
 }
 
 .team-item._6 {
-    margin-right: 0%;
+    margin-right: 4%;
     margin-bottom: 0px;
 }
 
 .team-item._3 {
-    margin-right: 0%;
+    margin-right: 4%;
 }
 
 .team-item._4 {
     margin-bottom: 0px;
-    margin-right: 0%;
+    margin-right: 4%;
 }
 
 .team-item._5 {
     margin-bottom: 0px;
+    margin-right: 4%;
 }
 
 .change-this-image {
