@@ -3354,7 +3354,7 @@ blockquote {
 }
 
 .social-icon-down.facebook {
-    background-image: url("https://www.digipants.com/assets/63238e717124a8c9a4c94e41/63238f74ed963935ed4fe472_logo-de-facebook.svg");
+    background-image: url("/assets/63238e717124a8c9a4c94e41/63238f74ed963935ed4fe472_logo-de-facebook.svg");
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;
@@ -3456,7 +3456,7 @@ blockquote {
 }
 
 .social-icon-up.facebook {
-    background-image: url("https://www.digipants.com/assets/63238e717124a8c9a4c94e41/63238f74ed963935ed4fe472_logo-de-facebook.svg");
+    background-image: url("/assets/63238e717124a8c9a4c94e41/63238f74ed963935ed4fe472_logo-de-facebook.svg");
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;
