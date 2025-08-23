@@ -8,4 +8,4 @@ from = "/bhupendra/*"
 to = "https://incredible-buttercream-b91919.netlify.app/:splat"
 status = 200
 force = true
-headers = { X-Forwarded-Host = "digipants.com" }
+headers = { X-Forwarded-Host = "https://digipants.com" }
