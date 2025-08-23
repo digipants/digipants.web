@@ -1,0 +1,11 @@
+[[redirects]]
+from = "/bhupendra"
+to = "/bhupendra/"
+status = 301
+
+[[redirects]]
+from = "/bhupendra/*"
+to = "https://incredible-buttercream-b91919.netlify.app/:splat"
+status = 200
+force = true
+headers = { X-Forwarded-Host = "digipants.com" }
