@@ -1,0 +1,49 @@
+<h1>Bhupendra — Personal Site (Next.js, Tailwind, Motion)</h1>
+<ul>
+<li><strong>URL path</strong>: https://digipants.com/bhupendra</li>
+<li><strong>Email</strong>: bhupendra@digipants.com</li>
+<li><strong>Tech</strong>: Next.js 14 (App Router) + Tailwind + Framer Motion + Lucide icons</li>
+<li><strong>Hosting</strong>: Netlify (static export) or any static host</li>
+</ul>
+<h2>Local setup</h2>
+<pre><code class="language-bash">pnpm i   # or npm i / yarn
+pnpm dev # http://localhost:3000/bhupendra
+</code></pre>
+<h2>Build &amp; Export (static)</h2>
+<pre><code class="language-bash">pnpm build &amp;&amp; pnpm export
+# output in ./out (with /bhupendra basePath)
+</code></pre>
+<h2>Netlify build settings</h2>
+<ul>
+<li><strong>Build command</strong>: <code>npm run build &amp;&amp; npm run export</code></li>
+<li><strong>Publish directory</strong>: <code>out</code></li>
+</ul>
+<p>If <code>digipants.com</code> is already on Netlify and you want this at <code>/bhupendra</code> on the <strong>main site</strong>:</p>
+<ol>
+<li>Deploy this site as a <strong>separate Netlify site</strong> (it will have its own <code>*.netlify.app</code> URL).</li>
+<li>In your <strong>main</strong> site’s repo, add a rewrite in <code>_redirects</code>:</li>
+</ol>
+<pre><code>/bhupendra/*  https://YOUR-BHUPENDRA-SITE.netlify.app/:splat  200
+</code></pre>
+<p>This proxies <code>digipants.com/bhupendra/*</code> to the sub‑site while preserving the path.</p>
+<p>If your main site is <strong>not</strong> on Netlify, you can also upload <code>out/bhupendra</code> to your current host at <code>/bhupendra</code>.</p>
+<h2>Form handling</h2>
+<p>The contact form uses <code>mailto:</code>. To use Formspree:</p>
+<ul>
+<li>Create a Formspree form, get the endpoint URL.</li>
+<li>Replace the form <code>onSubmit</code> with a <code>fetch</code> POST to that endpoint.</li>
+</ul>
+<pre><code class="language-ts">// inside onSubmit handler
+fetch(&quot;https://formspree.io/f/yourid&quot;, {
+  method: &quot;POST&quot;,
+  headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+  body: JSON.stringify({
+    name: fd.get(&quot;name&quot;),
+    email: fd.get(&quot;email&quot;),
+    project: fd.get(&quot;project&quot;),
+    budget: fd.get(&quot;budget&quot;),
+    timeline: fd.get(&quot;timeline&quot;),
+    message: fd.get(&quot;message&quot;),
+  }),
+}).then(() =&gt; alert(&quot;Thanks! I’ll reply within 24 hours.&quot;));
+</code></pre>
